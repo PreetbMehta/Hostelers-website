@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rector Portal</title>
+    <link rel="stylesheet" href="rectorStyle.css">
+    <script>
+        function myFunction1() {
+        window.location.href="index.html";
+      }
+      function emailUs() {
+      var myText = "Sorry this program is under constrution try it later.";
+      alert (myText);
+    }
+    </script>
+</head>
+<body>
+    <!-- heading -->
+    <header class="header" id="home">
+        <div class="left">        
+            <img src="logo.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#noticeBoard">Notice board</a></li>
+                <li><a href="#dailyAttendance">Daily Attendance</a></li>
+                <li><a href="#weeklyNeeds">Weekly Needs</a></li>
+                <li><a href="#complainsSection">Complains Section</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn" onclick="emailUs()">Add student/staff</button>
+            <button class="btn" onclick="myFunction1()">Log out</button>
+      </div>
+      </header>
+      <br><br><br><br><br><br><br>
+      <!-- notice section -->
+      <section id="noticeBoard"></section>
+      <h1 class="heading">Notices Board</h1>
+      <div class="noticeContainer">
+          <div class="leftNotice">
+            <div id="noticeContainer">
+                <h2>Notices for today are shown here: </h2>
+                <ul id="noticeUL" type="square">
+                  <li> Every student has to come back to hostel till 11:00pm sharp, after that hostel gates will be closed.</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt a saepe dicta architecto minus vero? Aspernatur labore quos velit!</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt a saepe dicta architecto minus vero? Aspernatur labore quos velit!</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt a saepe dicta architecto minus vero? Aspernatur labore quos velit!</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt a saepe dicta architecto minus vero? Aspernatur labore quos velit!</li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt a saepe dicta architecto minus vero? Aspernatur labore quos velit!</li>
+                </ul>
+              </div>
+          </div>
+          <div class="rightNotice">
+            <h2 >Add notice</h2>
+            <textarea id="addNotice" name="addNotice" placeholder="Write something.." style="height:200px" ></textarea>
+            <input type="submit" value="Submit">
+          </div>
+        </div>
+        <hr>
+    <!-- daily attendance -->
+        <section id="dailyAttendance">
+            <h1 class="heading">Today's Attendance</h1>
+            <div class="attendanceBox">
+                <div class="jamvanu">
+                    <label for="breakfast">Breakfast: </label>
+                    <output>30</output>
+                </div>
+                <div class="jamvanu">
+                    <label for="lunch">Lunch: </label>
+                    <output>35</output>
+                </div>
+                <div class="jamvanu">
+                    <label for="dinner">Dinner: </label>
+                    <output>45</output>
+                </div>
+                
+            </div>
+        </section>
+        <hr>
+        <br>
+<!-- weeklyNeeds -->
+        <section id="weeklyNeeds">
+            <h1 class="heading">Weekly Needs</h1>
+            <br><br><br>
+            <h3>1.)Student name: Preet</h3>
+            <p>Soap,Detergent,Shoe polish,some biscuits,250gms Khakhra</p>
+            <br><br>
+            <h3>2.)Student name: Kalp</h3>
+            <p>Detergent,some biscuits,250gms Chevda</p>
+            <br><br>
+            <h3>3.)Student name: Bhavya</h3>
+            <p>250gms Soya stick,250gms Yellow wafer,250gms Soya chips</p>
+        </section>
+        <br><br><br><br><br>
+        <hr>
+        <br>
+<!-- complains section -->
+        <Section id="complainsSection">
+            <br>
+            <h1 class="heading">Student's complains</h1>
+            <p>No complains yet..................</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <hr>
+            <br>
+        </Section>
+</body>
+</html>

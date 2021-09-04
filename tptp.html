@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+      function myFunction1() {
+        window.location.href="index.html";
+      }
+      function emailUs() {
+      var myText = "Our E-mail id:- hostelers.ahmedabad@gmail.com";
+      alert (myText);
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header1">
+        <div class="left">        
+            <img src="logo.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#noticeContainer" class="active">Notice</a></li>
+                <li><a href="#dailyAttendance">Daily Attendance</a></li>
+                <li><a href="#weeklyNeeds">Weekly needs</a></li>
+                <li><a href="#complains">Complains</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn" onclick="emailUs()">Email Us</button>
+            <button class="btn" onclick="myFunction1()">Log out</button>
+        </div>
+    </header>
+    <hr>
+    <br>
+    <br><br><br><br><br>
+    <!-- Notice -->
+    <section>
+        <div id="noticeContainer">
+          <h1 class="heading">Notices</h1>
+          <h2>Notices for today are shown here: </h2>
+          <ul id="noticeUL" type="square">
+            <li> Every student has to come back to hostel till 11:00pm sharp, after that hostel gates will be closed.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt a saepe dicta architecto minus vero? Aspernatur labore quos velit!</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt a saepe dicta architecto minus vero? Aspernatur labore quos velit!</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt a saepe dicta architecto minus vero? Aspernatur labore quos velit!</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt a saepe dicta architecto minus vero? Aspernatur labore quos velit!</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt a saepe dicta architecto minus vero? Aspernatur labore quos velit!</li>
+          </ul>
+        </div>
+    </section>
+    <hr>
+    <!-- Daily Attendance -->
+    <section id="dailyAttendance">
+      <h1 class="heading">Daily Attendance</h1>
+
+      <form >
+        <input type="checkbox" id="breakfast" name="breakfast" value="Breakfast">
+        <label for="breakfast">Breakfast</label><br>
+        <input type="checkbox" id="lunch" name="lunch" value="Lunch">
+        <label for="lunch">Lunch</label><br>
+        <input type="checkbox" id="dinner" name="dinner" value="Dinner">
+        <label for="dinner">Dinner</label><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <h2 class="daImportance">Importance: </h2>
+      <p>This is to calculate how much students are going to eat in the hostel mess so that there is less wastage of food. By this feature we can save more food as always there are many students who are eating outside and then their food made in hostel is wasted.  </p>
+    </section>
+    <hr>
+    <!-- Weekly needs -->
+    <section id="weeklyNeeds">
+      <h1 class="heading">Weekly Needs</h1>
+      <div class="wnContainer">
+        <div id="wnLeft">
+          <p>This feature is to order some essential things a student needs in day to day life. On every saturday you can order your things here and by next day it will be delivered to you.<b> Also it benefits in time as well as money</b>. By this feature things of whole hostel are ordered from a local wholeseller so it benefits us with price and a local business man is profited. so what we call<b>Local for vocal</b></p>
+          </div>
+
+          <div id="wnRight">
+            <img src="weeklyNeedsImg.jpg" alt="DailyNeedsAndSnacks">
+          </div>
+      </div>
+      <div id="wnForm">
+        <form action="">
+          <label for="name">Full Name: </label>
+          <input type="text" name="name" id="name" placeholder="Your name">
+          <br><br>
+          <label for="needsDesc">Write all the things you need: </label>
+          <textarea id="needsDesc" name="needsDesc" placeholder="Write something.." style="height:200px"></textarea>
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      
+    </section>
+    <hr>
+    <!-- Complains -->
+    <section id="complains">
+      <h1 class="heading">Complains</h1>
+      <p id="complainsPara">Irrespective to any <b>hesitation</b> just write your queries and complains here. By this we asure you that that each and every complain will be solved by the management committe, and no name of student will be declared among all. So please write here if you are facing any problem, with any one <b>our organisation, staff, any student or facilities provided in the organisation.</b>  </p>
+      <form id="complainsForm">
+        <label for="complainsName">Student Name: </label>
+        <input type="text" id="complainsName">
+        <br><br>
+        <label for="complainsDesc">Write all your complains here: </label>
+        <textarea id="complainsDesc" name="complainsDesc" placeholder="Write something.." style="height:200px"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <hr>
+    <!-- footer -->
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Hostelers</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Hostelers —
+            <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@knyttneve</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+</body>
+</html>

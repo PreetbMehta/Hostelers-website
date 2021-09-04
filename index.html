@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostelers</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    /* navbar */
+    .header{
+    position: fixed;
+    width: 100%;
+    background: white;
+    }
+    .left{
+    /* border: 2px solid red; */
+    position: fixed;
+    display: inline-block;
+    top: 18px;
+    left: 34px;
+    }
+    .left img{
+        width: 101px;
+    }
+    .mid{
+        /* border: 2px solid yellow; */
+        display: block;
+        top: 0;
+        z-index: 9999;
+        width: 33%;
+        margin: 18px auto;
+        padding: 23px 23px;
+    }
+    .right{
+    /* border: 2px solid green; */
+    display: inline-block;
+    position: fixed;
+    right: 7px;
+    top: 18px;
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: gray;
+    }
+    .navbar{
+    display: inline-block;
+    position:fixed;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: gray;
+    }
+    /* about us  */
+    .container{
+      display: flex;
+      margin: 23px 23px;
+    }
+    #leftAbout{
+      width: 60%;
+      /* border: 2px solid black; */
+      padding: 15px 15px;
+    }
+    #rightAbout{
+      width: 40%;
+      /* border: 2px solid red; */
+      margin: 15px 15px;
+    }
+    /* log in  */
+    #logInButton{
+      background-color: blue;
+    }
+    /* common codes */
+    .heading{
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 30px;
+    }
+  </style>
+   <script>
+    function callUs() {
+      var myText = "Call us on:- 9988776655";
+      alert (myText);
+    }
+    function emailUs() {
+      var myText = "Our E-mail id:- hostelers.ahmedabad@gmail.com";
+      alert (myText);
+    }
+    </script>
+</head>
+<body>
+    <!-- Header section -->
+    <header class="header" id="home">
+      <div class="left">        
+          <img src="logo.png" alt="">
+      </div>
+      <div class="mid">
+          <ul class="navbar">
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#aboutUs">About us</a></li>
+              <li><a href="#logIn">Log in</a></li>
+          </ul>
+      </div>
+      <div class="right">
+        <button class="btn" onclick="callUs()">Call Us Now</button>
+        <button class="btn" onclick="emailUs()">Email Us</button>
+    </div>
+    </header>
+    <br><br><br><br><br><br><br>
+    <!-- about us -->
+    <section id="aboutUs">
+      <h1 class="heading">About us</h1>
+      <div class="container" >
+        <div id="leftAbout">
+          <p class="aboutPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi non provident dolores vero soluta, officiis distinctio facilis dolore, recusandae ducimus hic. Sint architecto iusto quibusdam dolorem, nam libero exercitationem ullam molestiae deserunt mollitia consequuntur officia non adipisci commodi officiis? Nemo neque, nulla nobis magni fugiat possimus eveniet sit, voluptas illum eos delectus, quibusdam libero dolores doloremque exercitationem suscipit assumenda. Laborum, modi eveniet. Inventore, odio? Repellat, eveniet earum natus eos sit et culpa est a? Itaque aperiam corrupti ipsa voluptatibus quasi odit reprehenderit nam ducimus possimus, numquam earum nostrum ut atque libero delectus ex cupiditate tempora? Quae porro alias ab provident deserunt voluptatibus ipsum sapiente incidunt quasi nesciunt nam reiciendis id quia, reprehenderit, vero dicta at architecto quisquam voluptatem modi amet nemo magnam, accusantium itaque. Tempora blanditiis consequuntur in dicta accusamus, minima perspiciatis tenetur aspernatur porro vero. In vel repellendus explicabo nisi animi voluptate. Incidunt, eaque provident ab qui, ducimus fugiat est cumque consequatur pariatur inventore eius. Vel, iure, adipisci, doloremque debitis vero facilis magnam dolores sed non voluptatum optio corrupti suscipit. Incidunt ab dolores sint tempore consectetur error, ratione molestiae, magnam ducimus est magni harum repellat, ipsum nihil. Aspernatur amet maiores molestias maxime incidunt doloribus vero recusandae iusto nostrum voluptatibus magni eligendi, impedit eveniet sit debitis provident mollitia facere sunt error vel odit quibusdam? Nostrum suscipit libero nesciunt corporis odio repellat assumenda ab, iusto ipsam magni animi praesentium. Iusto nesciunt itaque est blanditiis sed iure, ab molestias aliquid inventore perspiciatis!</p>
+        </div>
+        <div id="rightAbout">
+          <img src="DEBackground1024_1.jpg" alt="HostelPicture">
+        </div>
+      </div>
+    </section>
+    <hr>
+      <!-- login section -->
+      <h1 class="heading">Log In Page</h1>
+      <section class="text-gray-600 body-font" id="logIn">
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+          <div class="mb-4">
+            <label class="block text-grey-darker text-sm font-bold mb-2" id="username" for="username">
+              Username
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="username" type="text" placeholder="Username">
+        </div>
+        <div class="mb-6">
+          <label class="block text-grey-darker text-sm font-bold mb-2" for="password">
+            Password
+          </label>
+          <input class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3" id="password" type="password" placeholder="******************">
+          <p class="text-red text-xs italic">Please choose a password.</p>
+        </div>
+        <div class="flex items-center justify-between">
+          <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded" type="button" id="logInButton" onclick="myFunction()">
+            Student Log In
+          </button>
+          <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded" type="button" id="logInButton" onclick="myFunction2()">
+            Rector Log In
+          </button>
+          <a class="inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker" href="#">
+            Forgot Password?
+          </a>
+        </div>
+    </div>
+        </div>
+        <script>
+          function myFunction() {
+            window.location.href="tptp.html";
+          }
+          function myFunction2() {
+            window.location.href="rectorPortal.html"
+          }
+        </script>
+      </section>
+      
+</body>
+</html>
